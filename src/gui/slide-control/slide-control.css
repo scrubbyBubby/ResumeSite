@@ -1,0 +1,194 @@
+.slide-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slide-line-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    left: 40px;
+    pointer-events: none;
+}
+
+.slide-line {
+    width: 100%;
+    height: 0px;
+    border-radius: 10px;
+    border-top: 3px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+    border-left: 6px solid rgba(0, 0, 0, 0.8);
+    border-right: 6px solid rgba(0, 0, 0, 0.8);
+    filter: blur(1px);
+    position: relative;
+}
+
+.slide-line::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    top: -3px;
+    left: 0;
+    right: 0;
+    box-shadow: 2px -5px 10px 3px rgb(25 25 25),
+        -2px 5px 10px 5px rgb(113 113 113);
+    animation: jiggleshadowstrongtall 150ms infinite;
+    animation-play-state: var(--flicker-animation);
+}
+
+.slide-hatchmark-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 75px;
+    right: 42px;
+    left: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.slide-hatchmark {
+    width: 2px;
+    height: 100%;
+    max-height: 15px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.hatchmark-title {
+    display: flex;
+    justify-content: center;
+    width: 5px;
+    position: relative;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
+.hatchmark-title div {
+    font-size: 20px;
+    min-width: max-content;
+    pointer-events: auto;
+    cursor: pointer;
+    font-size: 600;
+    color: rgb(22, 21, 19);
+    text-shadow: 0 0 rgba(0, 0, 0, 0);
+    background-color: transparent !important;
+    transition: all ease-in 250ms;
+}
+
+.hatchmark-title div:hover {
+    color: rgb(223, 194, 134) !important;
+    text-shadow: 0 0 20px rgb(223, 194, 134) !important;
+}
+
+.glowing-text {
+    color: rgb(223, 194, 134) !important;
+    text-shadow: 0 0 20px rgb(223, 194, 134) !important;
+}
+
+.glowing-box {
+    background-color: rgb(223, 194, 134) !important;
+    box-shadow: 0 0 20px 2px rgb(223, 194, 134) !important;
+}
+
+.slide-dotmark-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 28px;
+    left: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    filter: blur(1px);
+}
+
+.slide-dotmark-shadows-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 28px;
+    left: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    filter: blur(1px);
+}
+
+.slide-dotmark:first-child,
+.slide-dotmark:last-child,
+.slide-dotmark-shadow:first-child,
+.slide-dotmark-shadow:last-child {
+    width: 25px;
+    height: 25px;
+}
+
+.slide-dotmark {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    transform: rotate(45deg);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.slide-dotmark-shadow {
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.slide-dotmark-shadow::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    box-shadow: -4px -4px 9px 7px rgb(25 25 25), 4px 4px 9px 7px rgb(95 95 95);
+    animation: jiggleshadow 150ms infinite;
+    animation-play-state: var(--flicker-animation);
+}
+
+.slide-box {
+    position: absolute;
+    max-height: 50px;
+    left: 32px;
+    right: 34px;
+    bottom: calc(50% - 24px);
+    pointer-events: none;
+}
+
+.slide-handle-pointer {
+    position: absolute;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border: 7px solid black;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+@keyframes jiggleshadowstrongtall {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    80% {
+        transform: scaleY(1.055);
+    }
+}

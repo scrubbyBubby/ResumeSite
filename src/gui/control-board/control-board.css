@@ -1,0 +1,42 @@
+.main-control-board-inner {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "slide dial" "slide dial";
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 1fr 300px;
+}
+
+.main-slide-control {
+    height: 100%;
+    width: 100%;
+    grid-area: slide;
+    display: grid;
+    place-items: center;
+}
+
+.main-dial-control {
+    height: 100%;
+    width: 100%;
+    grid-area: dial;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main-switch-control {
+    height: 100%;
+    width: 100%;
+    grid-area: switch;
+    display: grid;
+    place-items: center;
+    background-color: rgba(121, 24, 105, 0.5);
+}
+
+.main-socials {
+    height: 100%;
+    width: 100%;
+    grid-area: social;
+    display: grid;
+    place-items: center;
+}
