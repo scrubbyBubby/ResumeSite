@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+# Personal Resume Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+A themed site designed around the idea of an alien lifeform analyzing humans. An abridged version of my resume is included within the site, as well as separate pages for each of the projects that I have completed. Animations and design elements of the site are also themed after an alien monitor, with functional controls to change the color of the screen, tab between projects, and scroll the current page.
 
-## Available Scripts
+### Stack
+I'm using vanilla React.js with generate-react-cli for easy component creation through the terminal. Styling is pure CSS and html is written in JSX as is standard with React.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Goals
+The focus of the project was to demonstrate the ability to animate elements within React in interesting ways. Different project tabs are animated in and out in a swinging motion, with seamless creation of the new tab and destruction of the old tab. Several SVGs made by myself also rotate in a way that implied a three-dimensionality, but is really just a clever use of rotate(3d) with a transform-origin shifted in the z-axis. Clicking and dragging of pseudo-controls is handled directly through JavaScript, and this was leveraged to create the controls that drag along a curved path, as only arithmetic is used to determine the drag path of the controls along the circular track. In addition, I created a popup which allows users to either enable or leave disabled the subtle flicker effect of the monitor, as this could potentially affect some with light sensitive conditions.
