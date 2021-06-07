@@ -1,5 +1,8 @@
 # Personal Resume Site
 
+### Site Link
+<http://codinglikelyoko.com>
+
 ### Overview
 A themed site designed around the idea of an alien lifeform analyzing humans. An abridged version of my resume is included within the site, as well as separate pages for each of the projects that I have completed. Animations and design elements of the site are also themed after an alien monitor, with functional controls to change the color of the screen, tab between projects, and scroll the current page.
 
