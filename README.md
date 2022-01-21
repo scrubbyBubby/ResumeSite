@@ -1,6 +1,6 @@
 # Personal Resume Site
 
-### Site Link
+### Site Link (Currently inaccessible due to hosting domain issue. Will return in 24-48 hours.)
 <http://codinglikelyoko.com>
 
 ### Overview
